@@ -1,0 +1,422 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.logInContainer {
+  text-align: center;
+}
+
+.welcomeText {
+  padding: 20px;
+}
+
+.userInfoContainer {
+  text-align: center;
+}
+#createHeader {
+  font-size: 25px;
+  padding: 15px;
+}
+
+.topnav {
+  text-align: center;
+  height: 85px;
+  width: 100%;
+  padding: 5px;
+}
+
+.signUpBtn {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: grey;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin: 40px;
+}
+.signUpBtn:hover,
+.add-user-btn:hover {
+  background-color: blue;
+  box-shadow: 0px 15px 20px rgba(46, 58, 229, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.signUpBtn:active {
+  transform: translateY(-1px);
+}
+
+.birthdayText {
+  padding-left: 20%;
+}
+
+.loginInpt {
+  width: 300px;
+  padding: 10px;
+  margin: 3px;
+}
+
+.logoutBtn {
+  cursor: pointer;
+  background-color: grey;
+  border-radius: 25px;
+  color: white;
+  float: right;
+  font-size: 16px;
+  width: 100px;
+  height: 45px;
+  transition: 1s;
+}
+
+.logoutBtn:hover {
+  font-size: 19px;
+  width: 120px;
+  height: 55px;
+  box-shadow: 2px 2px 4px #000000;
+  transition: 1s;
+}
+
+label {
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+input {
+  padding: 15px;
+}
+
+.examInfo {
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.examList {
+  background-color: black;
+  border-radius: 20px;
+}
+
+.examList ul {
+  color: white;
+  padding-top: 10px;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.examList li {
+  font-size: 20px;
+  list-style-type: none;
+  padding-top: 10px;
+  border-bottom: 2px solid white;
+}
+.headerContainer {
+  text-align: center;
+}
+
+.examContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
+}
+
+.examContent {
+  flex: 1 1 70%;
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.sidebar {
+  flex: 1 1 30%;
+  padding-left: 15px;
+}
+
+.sidebarContent {
+  background-color: rgba(128, 128, 128, 0.2);
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  border-radius: 15px;
+}
+
+.answerInput {
+  height: 30px;
+  width: 200px;
+  border-radius: 15px;
+}
+
+.examField {
+  padding: 20px;
+}
+
+.examHeader {
+  font-size: 26px;
+  text-decoration: underline;
+}
+
+.resultContainer {
+  margin-left: 8%;
+  margin-right: 8%;
+  text-align: center;
+}
+
+.resultInner {
+  background-color: rgba(2, 2, 2, 0.2);
+  text-align: center;
+  border: solid 2px black;
+}
+
+.circlePercentPass {
+  display: flex;
+  text-align: center;
+  margin-left: 45%;
+  margin-right: 45%;
+  border: solid 5px green;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+.circlePercentFail {
+  display: flex;
+  text-align: center;
+  margin-left: 45%;
+  margin-right: 45%;
+  border: solid 5px red;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+.percent {
+  font-size: 50px;
+  padding: 15px;
+}
+
+.svg-inline--fa.fa-medal {
+  color: gold;
+  height: 150px;
+  width: 300px;
+  margin-bottom: 35px;
+}
+
+.svg-inline--fa.fa-xmark {
+  color: rgb(255, 0, 0);
+  height: 180px;
+  width: 350px;
+  margin-bottom: 35px;
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10%;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 1s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  transition: 1s;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td,
+th {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.feedbackBox {
+  width: 500px;
+  height: 150px;
+}
+
+.removeBtn {
+  font-size: 20px;
+  font-weight: normal;
+  width: 100px;
+  height: 50px;
+  box-shadow: 2px 2px 4px #000000;
+  color: white;
+  background-color: red;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.addStudentBtn {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: blue;
+  box-shadow: 2px 2px 4px #000000;
+  border-radius: 20px;
+  width: 200px;
+  height: 50px;
+  transition: 1s;
+}
+
+.addStudentBtn:hover {
+  box-shadow: 8px 8px 10px #000000;
+  transition: 1s;
+}
+
+.resetBtn {
+  font-size: 20px;
+  font-weight: bold;
+  width: 100px;
+  height: 50px;
+  box-shadow: 2px 2px 4px #000000;
+  color: white;
+  background-color: blue;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.removeBtn:hover,
+.resetBtn:hover {
+  width: 110px;
+  box-shadow: 6px 6px 8px #000000;
+  transition: 1s;
+}
+
+.modal {
+  background-color: grey;
+  position: absolute;
+  width: 50%;
+  display: none;
+  margin-left: 30%;
+  text-align: center;
+  overflow: auto;
+  z-index: 1;
+  border-radius: 15px;
+  box-shadow: 6px 6px 8px #000000;
+  transition: 1s;
+  animation-name: modal;
+  animation-duration: 1s;
+}
+
+.modal-content {
+  padding: 20px;
+  animation-name: modalopen;
+  animation-duration: 2s;
+}
+
+.close-modal-Btn {
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+  width: 40px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: rgb(240, 235, 235);
+  box-shadow: 2px 2px 4px #000000;
+  transition: 1s;
+}
+
+.close-modal-Btn:hover {
+  box-shadow: 6px 6px 8px #000000;
+  transition: 1s;
+}
+
+.svg-inline--fa.fa-user-plus {
+  width: 200px;
+  height: 150px;
+}
+
+.subBtn {
+  font-size: 18px;
+  border-radius: 20px;
+  width: 250px;
+  height: 50px;
+  box-shadow: 4px 4px 4px grey;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.subBtn:hover {
+  box-shadow: 9px 9px 9px grey;
+  transition: 1s;
+}
+
+.add-user-btn {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: rgb(240, 235, 235);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+  cursor: pointer;
+  margin: 40px;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.svg-inline--fa.fa-circle-check {
+  width: 500px;
+  height: 400px;
+  color: darkgreen;
+}
+
+.svg-inline--fa.fa-face-grin-beam-sweat {
+  width: 400px;
+  height: 300px;
+  color: darkslateblue;
+}
+
+.svg-inline--fa.fa-chalkboard-user {
+  width: 350px;
+  height: 300px;
+  padding-top: 25px;
+}
